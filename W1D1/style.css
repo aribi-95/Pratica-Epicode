@@ -1,31 +1,65 @@
 body {
-  font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 .main {
-  margin: 0 20vh 0 20vh;
+    margin: 0 20vh 0 20vh;
 }
 
 .main img {
+    border-radius: 20px;
+    box-shadow: 0px 4px 20px #00000080;
 }
 
 .header {
-  height: 15vh;
-  text-align: center;
+    height: 15vh;
+    text-align: center;
 }
 
 .header p {
-  background-color: #e6dec1;
-  padding: 10px;
+    background-color: #fffae7;
+    padding: 10px;
+    border-top: solid 2px #e8cf73;
+}
+
+.headerText {
+    color: #0f4d4d;
+    font-weight: bold;
+}
+
+a {
+    color: #087878;
 }
 
 h1 {
-  text-align: center;
-  margin: 20px;
+    text-align: center;
+    margin: 20px;
 }
 
-.imgSubtitle {
-  color: gray;
-  text-align: center;
-  margin: 5px 0 10px 0;
+.recipe ul li {
+    line-height: 1.8;
+}
+
+.recipe ol li {
+    line-height: 1.4;
+}
+
+li p {
+    margin-top: 7px;
+}
+
+.credit {
+    color: gray;
+    text-align: center;
+    margin: 5px 0 10px 0;
+}
+
+.featuredIn {
+    border-left: 2px solid #e8cf73;
+    padding-left: 10px;
+    margin-left: 5px;
+}
+
+.featuredIn span {
+    color: rgb(178, 6, 6);
 }

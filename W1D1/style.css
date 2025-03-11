@@ -1,0 +1,31 @@
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.main {
+  margin: 0 20vh 0 20vh;
+}
+
+.main img {
+}
+
+.header {
+  height: 15vh;
+  text-align: center;
+}
+
+.header p {
+  background-color: #e6dec1;
+  padding: 10px;
+}
+
+h1 {
+  text-align: center;
+  margin: 20px;
+}
+
+.imgSubtitle {
+  color: gray;
+  text-align: center;
+  margin: 5px 0 10px 0;
+}

@@ -1,0 +1,233 @@
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+
+    background-color: #eaeded;
+}
+
+header {
+    box-sizing: border-box;
+    background-color: #222f3e;
+    height: 8.5vh;
+    min-height: 30px;
+    padding: 1.4vh 0 1.4vh 2vw;
+}
+
+header div {
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100%;
+    width: 200px;
+}
+
+nav {
+    background-color: #354758;
+    height: 4.7vh;
+    min-height: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+nav span {
+    align-content: center;
+    color: white;
+    font-size: 1em;
+    padding: 0 10px;
+    height: 100%;
+}
+
+nav span:first-child {
+    margin-left: 20px;
+}
+
+nav span:hover {
+    background-color: #596776;
+}
+
+.banner {
+    background-color: #f56600;
+    color: white;
+    font-size: 0.95em;
+    height: 4.7vh;
+    min-height: 20px;
+    align-content: center;
+    text-align: center;
+    margin: 4.7vh 4.7vh 0 4.7vh;
+}
+
+#holidayGiftGuides {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    background-color: #2f6e61;
+    height: 28vh;
+    margin: 4.7vh 4.7vh 0 4.7vh;
+}
+
+#holidayGiftGuides div {
+    align-content: center;
+    text-align: center;
+    color: #eaeded;
+    height: 100%;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.whiteBg {
+    background-color: white;
+}
+
+#perfectGift {
+    height: 60vh;
+    margin: 4.7vh 4.7vh 0 4.7vh;
+    padding: 2.5vh 3vh;
+}
+
+.products {
+    height: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.products div {
+    height: 100%;
+    width: 23%;
+    border-radius: 20px;
+    margin-top: 2vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 6px 6px 15px #b9b9b9;
+}
+
+section {
+    height: 64vh;
+    margin: 4.7vh 4.7vh 0 4.7vh;
+}
+
+.wideImage {
+    height: 93%;
+    margin-bottom: 7px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.subtitle {
+    text-align: center;
+}
+
+.subtitleText {
+    color: black;
+    font-size: 1.3em;
+    font-weight: 450;
+}
+
+.subtitleLink {
+    margin-left: 15px;
+    color: #017185;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+#backToTop {
+    height: 7vh;
+    min-height: 20px;
+    margin-top: 4.7vh;
+    background-color: #354758;
+    color: #eaeded;
+    align-content: center;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.dark {
+    background-color: #222f3e;
+    height: 28vh;
+    min-height: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.dark div {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 100%;
+    width: 180px;
+}
+
+/* EXTRA */
+
+#suggestions {
+    display: flex;
+    justify-content: space-between;
+    height: 65vh;
+}
+
+#suggestions h2 {
+    margin: 0.5vh 0 0 1vw;
+}
+
+.seeMore {
+    color: #027286;
+    margin-left: 30px;
+    font-size: 0.9em;
+    font-weight: 500;
+    margin: 0 0 0 1vw;
+}
+
+#gamingAccessories,
+#comfyStyles,
+#holidayGifts,
+#joyfulWishlist {
+    box-sizing: border-box;
+    background-color: white;
+    height: 100%;
+    width: 24%;
+    padding: 1vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.stuff {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 75%;
+}
+
+.stuffWrapper {
+    font-size: 0.8em;
+    font-weight: 500;
+    height: 40%;
+    width: 40%;
+}
+
+.stuffWrapper p {
+    margin: 0.5vh 0 0 0;
+}
+
+.stuffImages {
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.new {
+    height: 7vh;
+    width: 7vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 14vh;
+    left: 6vw;
+}

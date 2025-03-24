@@ -1,0 +1,303 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wdth,wght@0,62.5..100,100..900;1,62.5..100,100..900&display=swap");
+* {
+    font-family: "Noto Sans", sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: rgb(255, 255, 255);
+}
+
+header {
+    box-sizing: border-box;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10vh;
+    box-shadow: 0 0 15px rgb(203, 203, 203);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 10vw;
+    z-index: 1000;
+}
+
+#logo {
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+    height: 60%;
+    width: 200px;
+}
+
+#topRight {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.whiteButton {
+    padding: 0 12px;
+    border: solid 1px rgb(58, 58, 58);
+    font-size: 1em;
+    background-color: white;
+}
+
+header .whiteButton {
+    height: 36px;
+    border-radius: 18px;
+}
+
+#mediumAndTwitter .whiteButton {
+    height: 44px;
+    border-radius: 22px;
+}
+
+.followSuggestion .whiteButton {
+    height: 30px;
+    border-radius: 15px;
+}
+
+.tag {
+    padding: 0 10px;
+    align-content: center;
+    border: none;
+    background-color: rgb(242, 242, 242);
+}
+
+article .tag {
+    height: 25px;
+    border-radius: 12.5px;
+}
+
+.dot {
+    display: inline-block;
+    padding: 0 5px;
+}
+
+.userImg {
+    display: inline-block;
+    color: white;
+    align-content: center;
+    text-align: center;
+}
+
+header .userImg {
+    background-color: rgb(244, 81, 30);
+    height: 36px;
+    width: 36px;
+    border-radius: 18px;
+}
+
+.followSuggestion .userImg {
+    background-color: rgb(22, 90, 47);
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+}
+
+article .userImg {
+    background-color: rgb(87, 112, 162);
+    height: 25px;
+    width: 25px;
+    border-radius: 12.5px;
+    margin-right: 3px;
+}
+
+.savedItem .userImg {
+    background-color: rgb(148, 39, 119);
+    height: 20px;
+    width: 20px;
+    border-radius: 10px;
+    margin-right: 3px;
+    margin-right: 5px;
+}
+
+i {
+    color: rgb(58, 58, 58);
+}
+
+main {
+    padding-top: 10vh;
+    padding-left: 8vw;
+    padding-right: 8vw;
+    display: flex;
+}
+
+menu {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.8em;
+    color: gray;
+    padding: 10px;
+    margin: 0;
+    border-bottom: solid 1.2px rgb(232, 232, 232);
+}
+
+menu span:last-child {
+    color: black;
+    padding: 10px;
+    border-bottom: solid 1.2px black;
+}
+
+#storyWrapper {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    height: 200vh;
+    padding: 20px 5vw 20px 0;
+}
+
+.story {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding: 20px 0;
+    border-bottom: solid 1.2px rgb(232, 232, 232);
+}
+
+.story .user {
+    font-size: 0.8em;
+}
+
+.story h2 {
+    margin: 5px 0;
+}
+
+.story p {
+    margin: 5px 0;
+}
+
+.story img {
+    width: 230px;
+    height: auto;
+    margin-left: 20px;
+}
+
+.story .description {
+    color: rgb(120, 120, 120);
+}
+
+.story .meta {
+    font-size: 0.8em;
+    margin-top: 10px;
+    color: rgb(120, 120, 120);
+}
+
+#sidebar {
+    width: 35%;
+    padding: 20px 0 20px 5vw;
+    border-left: 1px solid rgb(232, 232, 232);
+}
+
+#sidebar section {
+    padding: 20px 0;
+    border-bottom: solid 1.2px rgb(232, 232, 232);
+}
+
+#mediumAndTwitter {
+    text-align: center;
+}
+
+#plus {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8em;
+    font-weight: 200;
+    color: gray;
+}
+
+#plus img {
+    margin: 0 10px;
+}
+
+#sidebar .whiteButton img {
+    margin: 0 5px;
+}
+
+#sidebar a {
+    display: block;
+    color: gray;
+    margin: 25px 0 10px 0;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tags .tag {
+    font-size: 0.9em;
+    height: 36px;
+    border-radius: 18px;
+    margin: 4px;
+}
+
+.followSuggestion {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.followSuggestion div {
+    width: 50%;
+    margin: 10px;
+}
+
+.followSuggestion p {
+    margin: 0;
+}
+
+.followSuggestion .name {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.followSuggestion .bio {
+    font-size: 0.75em;
+    color: gray;
+}
+
+#filterByTag {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#filterByTag span {
+    color: gray;
+    font-size: 0.9em;
+    height: 20px;
+    margin: 10px;
+}
+
+.savedItem {
+    display: flex;
+    align-items: center;
+    margin: 25px 0;
+}
+
+.savedText {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.9em;
+}
+
+.author {
+    color: black;
+    font-weight: 500;
+}
+.savedMeta {
+    color: gray;
+}
+
+.savedTitle {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: black;
+    margin: 10px 0;
+}

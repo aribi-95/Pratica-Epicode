@@ -50,6 +50,7 @@ function mostraNascondiImmagini() {
     });
 }
 
+// ESERCIZIO 12
 function prezzoColorato() {
     function coloreRgbRandom() {
         const r = Math.floor(Math.random() * 256);

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Smartphone Mania</title>
+    </head>
+    <link rel="stylesheet" href="styles.css" />
+    <body>
+        <main>
+            <h1>Smartphone Mania</h1>
+
+            <button onclick="cambiaTitolo('Benvenuto su Smartphone Mania!')">Cambia titolo</button>
+            <button onclick="cambiaSfondo('#a4c5ed')">Sfondo a contrasto</button>
+            <button onclick="cambiaIndirizzo('Via Milano 456, Roma, Italia')">Cambia indirizzo</button>
+            <button onclick="aggiungiClasse('goldenLink')">Evidenzia link</button>
+            <button onclick="mostraNascondiImmagini()">Mostra/nascondi immagini</button>
+            <button onclick="prezzoColorato()">Prezzi colorati!</button>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Immagine</th>
+                        <th>Nome</th>
+                        <th>Descrizione</th>
+                        <th>Prezzo</th>
+                        <th>Link Amazon</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="https://m.media-amazon.com/images/I/619GbzAAOhL._AC_SL1500_.jpg" alt="iPhone 16 Pro" /></td>
+                        <td>Apple iPhone 16 Pro</td>
+                        <td>Potente e compatto con chip A18 Pro, design in titanio</td>
+                        <td class="prezzo">€999</td>
+                        <td><a href="https://amzn.eu/d/5gjOTvY">Compra ora</a></td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://m.media-amazon.com/images/I/71ctT+FiWSL._AC_SL1500_.jpg" alt="Samsung Galaxy S24 Ultra" /></td>
+                        <td>Samsung Galaxy S24 Ultra</td>
+                        <td>Fotocamera da 200MP, S Pen integrata, display AMOLED 6.8”</td>
+                        <td class="prezzo">€855</td>
+                        <td><a href="https://amzn.eu/d/0sI7rWf">Compra ora</a></td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://m.media-amazon.com/images/I/71r0349s3cL._AC_SL1500_.jpg" alt="Google Pixel 8 Pro" /></td>
+                        <td>Google Pixel 8 Pro</td>
+                        <td>Android puro, AI integrata, fotocamera eccezionale</td>
+                        <td class="prezzo">€438</td>
+                        <td><a href="https://amzn.eu/d/8l5UxP6">Compra ora</a></td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://m.media-amazon.com/images/I/71o8VehMHXL._AC_SL1500_.jpg" alt="OnePlus 12" /></td>
+                        <td>OnePlus 12</td>
+                        <td>Prestazioni top, ricarica super veloce, display fluidissimo</td>
+                        <td class="prezzo">€669</td>
+                        <td><a href="https://amzn.eu/d/eEPr9za">Compra ora</a></td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://m.media-amazon.com/images/I/51k569NqZfL._AC_SL1000_.jpg" alt="Xiaomi 13T Pro" /></td>
+                        <td>Xiaomi 13T Pro</td>
+                        <td>Hardware da top di gamma, ottimo rapporto qualità/prezzo</td>
+                        <td class="prezzo">€323</td>
+                        <td><a href="https://amzn.eu/d/dv7cuYb">Compra ora</a></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="comment-box">
+                <h3>Lascia un commento:</h3>
+                <input type="text" placeholder="Scrivi qui il tuo commento..." />
+            </div>
+        </main>
+
+        <footer>
+            <p>Smartphone Mania - <span id="indirizzo">Via Roma 123, Milano, Italia</span></p>
+        </footer>
+
+        <script src="s3p2-scaricabile.js"></script>
+    </body>
+</html>

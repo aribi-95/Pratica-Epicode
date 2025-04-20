@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css");
+
+* {
+    font-family: "Roboto", sans-serif;
+}
+
+#ricerca {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 90%;
+    margin: 0 auto;
+}
+
+img {
+    width: 40%;
+    max-width: 350px;
+    padding-top: 30px;
+}
+
+h1 {
+    color: #2977c9;
+    font-size: 2.7em;
+    font-weight: 300;
+    font-variation-settings: "wdth" 99;
+}
+
+.inputField {
+    position: relative;
+    margin: 7px 0;
+}
+
+input {
+    padding: 10px 10px 10px 35px;
+    font-size: 0.8em;
+    font-weight: 300;
+    width: 70%;
+    border-radius: 5px;
+    border: solid 0.8px #a0a0a0;
+    box-shadow: 2px 2px 5px #c2c2c2;
+}
+
+i {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #7a7a7a;
+}
+
+button {
+    font-size: 0.9em;
+    background-color: #2977c9;
+    font-weight: 400;
+    color: white;
+    padding: 10px 15px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+button:hover {
+    box-shadow: 0 2px 5px #3b51699d;
+    transform: translateY(-1.5px);
+}
+
+button:active {
+    box-shadow: 0 2px 5px #3b51699d;
+    transform: translateY(1.5px);
+}
+
+#results {
+    margin-top: 25px;
+}
+
+table,
+p {
+    margin: 0 auto;
+    width: 90%;
+}
+
+th {
+    font-size: 0.9em;
+    font-weight: 500;
+    padding: 10px 0;
+    text-align: left;
+    border-bottom: 2px solid #ddd;
+}
+
+td {
+    font-size: 0.8em;
+    font-weight: 300;
+    border-bottom: 1px solid #ddd;
+    padding: 5px 0;
+}
+
+p {
+    font-weight: 300;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}

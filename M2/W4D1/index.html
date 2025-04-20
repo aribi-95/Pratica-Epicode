@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Job search</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+
+    <body>
+        <div id="ricerca">
+            <div id="textContainer">
+                <h1>
+                    Millions of jobs and <br />
+                    people hiring
+                </h1>
+
+                <div class="inputField">
+                    <i class="fas fa-search"></i>
+                    <input type="text" name="title" id="title" placeholder="Search job titles or companies" />
+                </div>
+
+                <div class="inputField">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <input type="text" name="location" id="location" placeholder="Location" />
+                </div>
+
+                <button id="search">Search Jobs</button>
+            </div>
+
+            <img src="assets/office.png" alt="Office artwork" />
+        </div>
+
+        <div id="results">
+            <table class="hidden">
+                <tr>
+                    <th style="width: 70%">Title</th>
+                    <th>Location</th>
+                </tr>
+            </table>
+            <p></p>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,75 @@
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+}
+
+/* ESERCIZIO 1 */
+.jumbotron h1 {
+    background-color: rgb(231, 115, 161);
+}
+
+/* ESERCIZIO 2 */
+nav > * {
+    background-color: gold;
+}
+
+/* ESERCIZIO 3 */
+.jumbotron a {
+    background-color: rgb(111, 255, 0);
+}
+
+/* ESERCIZIO 4 */
+.blog-post:first-of-type {
+    border: solid 5px rgb(200, 40, 200);
+}
+
+/* ESERCIZIO 5 */
+.blog-post hr {
+    border: solid 3px;
+    color: red;
+}
+
+/* ESERCIZIO 6 */
+nav span:nth-child(even) {
+    border: solid 3px brown;
+}
+
+/* ESERCIZIO 7 */
+.list-unstyled.mb-0 li {
+    background-color: aqua;
+}
+
+/* ESERCIZIO 8 */
+.blog-post:nth-of-type(2) .blog-post-meta a {
+    border: solid 5px green;
+}
+
+/* ESERCIZIO 9 */
+.blog-post:nth-of-type(3) li:nth-of-type(2) {
+    background-color: palevioletred;
+}
+
+/* ESERCIZIO 10 */
+.float-right.mb-3.mr-3 {
+    background-color: rgb(255, 151, 46);
+}
+
+/* ESERCIZIO 11 */
+.blog-pagination a:nth-of-type(2) {
+    background-color: yellow;
+}
+
+/* ESERCIZIO 12 */
+footer a:nth-of-type(2) {
+    border: solid 3px rosybrown;
+}

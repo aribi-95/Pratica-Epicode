@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            // ------------------------ PRATICA BASE ------------------------ //
+            // ESERCIZIO 1
+            // Crea una funzione che controlli due numeri interi. Ritorna `true' se uno dei due è 50 o se la somma dei due è 50.
+            let number1 = 12;
+            let number2 = 50;
+            function checkCinquanta(num1, num2) {
+                if (num1 === 50 || num2 === 50 || num1 + num2 === 50) {
+                    return true;
+                } else {
+                    return false;
+                }
+            }
+            console.log(checkCinquanta(number1, number2));
+
+            // ESERCIZIO 2
+            // Crea una funzione che rimuova il carattere ad una specifica posizione da una stringa. Passa la stringa e la posizione come parametri e ritorna la stringa modificata.
+            let string1 = "Ciao, come stai?";
+            let posizione = 1;
+            function rimuoviCarattere(string, pos) {
+                if (string.length - 1 >= pos) {
+                    // console.log(`The character at index ${pos} is ${string.charAt(pos)}`);
+                    return string.slice(0, pos).concat(string.slice(pos + 1));
+                } else {
+                    console.log(`The string isn't long enough!`);
+                }
+            }
+            console.log(rimuoviCarattere(string1, posizione));
+
+            // ESERCIZIO 3
+            // Crea una funzione che controlli se due numeri siano compresi tra 40 e 60 o tra 70 e 100. Ritorna `true' se rispecchiano queste condizioni, altrimenti ritorna 'false'.
+            let number3 = 57;
+            let number4 = 86;
+            function checkTwoNumbersInRange(num3, num4) {
+                function isInRange(num) {
+                    return (num >= 40 && num <= 60) || (num >= 70 && num <= 100);
+                }
+                return isInRange(num3) && isInRange(num4);
+            }
+            console.log(checkTwoNumbersInRange(number3, number4));
+
+            // ESERCIZIO 4
+            //Crea una funzione che accetti un nome di città come parametro e ritorni il nome stesso se inizia con            "Los" o "New", altrimenti ritorni `false'.
+            let city1 = "Los Angeles";
+            function checkCityName(city) {
+                let lowercaseCity = city.toLowerCase();
+                if (lowercaseCity.startsWith("los") || lowercaseCity.startsWith("new")) {
+                    return city;
+                } else {
+                    return false;
+                }
+            }
+            console.log(checkCityName(city1));
+
+            // ESERCIZIO 5
+            // Crea una funzione che calcoli e ritorni la somma di tutti gli elementi di un array. L'array deve essere passato come parametro.
+            let numbers1 = [128, 57, 304, 92, 11, 276, 83, 199, 45, 387, 66, 213, 7];
+            function sumValues(array) {
+                let sum = 0;
+                array.forEach((number) => (sum += number));
+                return sum;
+            }
+            console.log(sumValues(numbers1));
+
+            // ESERCIZIO 6
+            // Crea una funzione che controlli che un array NON contenga i numeri 1 o 3. Se NON li contiene, ritorna `true', altrimenti ritorna `false'.
+            let numbers2 = [18, 75, 4, 1, 92, 11, 276, 83, 19, 45, 37, 66, 21, 7];
+            function check1or3(array) {
+                for (let number of array) {
+                    if (number === 1 || number === 3) {
+                        return false;
+                    }
+                }
+                return true;
+            }
+            console.log(check1or3(numbers2));
+
+            /* ESERCIZIO 7
+                        Crea una funzione per trovare il tipo di un angolo i cui gradi sono passati come parametro.
+                        Angolo acuto: meno di 90° > ritorna "acuto"
+                        Angolo ottuso: tra i 90° e i 180° gradi > ritorna "ottuso"
+                        Angolo retto: 90° > ritorna "retto"
+                        Angolo piatto: 180° > ritorna "piatto"
+                        */
+            let angle1 = 97;
+            function checkAngle(angle) {
+                if (angle < 90) {
+                    return `${angle}° è un angolo acuto`;
+                } else if (angle === 90) {
+                    return `${angle}° è un angolo retto`;
+                } else if (90 < angle && angle < 180) {
+                    return `${angle}° è un angolo ottuso`;
+                } else if (angle === 180) {
+                    return `${angle}° è un angolo piatto`;
+                }
+            }
+            console.log(checkAngle(angle1));
+
+            // ESERCIZIO 8
+            // Crea una funzione che crei un acronimo a partire da una frase. Es. "Fabbrica Italiana Automobili Torino" deve ritornare "FIAT".
+            let company1 = "Fabbrica Italiana Automobili Torino";
+            function createAcronym(name) {
+                let array = name.split(" ");
+                let acronym = "";
+                array.forEach((word) => {
+                    acronym += word[0].toUpperCase();
+                });
+                return acronym;
+            }
+            console.log(createAcronym(company1));
+
+            // ------------------------ PRATICA EXTRA ------------------------ //
+            // ESERCIZIO 1
+            // Partendo da una stringa (passata come parametro), ritorna il carattere più usato nella stringa stessa.
+            function mostUsedChar(string) {
+                let charactersArray = string.toLowerCase().split("");
+                let remove = " ";
+                let cleanArray = charactersArray.filter((value) => !remove.includes(value));
+                let counts = {};
+                cleanArray.forEach((char) => {
+                    if (counts[char]) {
+                        counts[char]++;
+                    } else {
+                        counts[char] = 1;
+                    }
+                });
+                // console.log(JSON.stringify(counts));
+                let maxChar = "";
+                let maxCount = 0;
+                for (let char in counts) {
+                    if (counts[char] > maxCount) {
+                        maxCount = counts[char];
+                        maxChar = char;
+                    }
+                }
+                return `${maxChar} is the most used character with a count of ${maxCount}`;
+            }
+            console.log(mostUsedChar(string1));
+
+            // ESERCIZIO 2
+            // Controlla che due stringhe passate come parametri siano gli anagrammi l’una dell’altra. Ignora punteggiatura e spazi e ricordate di rendere la stringa tutta in minuscolo. Se le due parole sono anagrammi, ritorna `true`, altrimenti ritorna `false`.
+            let word1 = "arconte";
+            let word2 = "cartone";
+            function isAnagram(word1, word2) {
+                function cleanWord(word) {
+                    return word
+                        .toLowerCase()
+                        .replace(/[\s.,!?;:]/g, "")
+                        .split("")
+                        .sort()
+                        .join("");
+                }
+                return cleanWord(word1) === cleanWord(word2);
+            }
+            console.log(isAnagram(word1, word2));
+
+            // ESERCIZIO 3
+            // Partendo da una lista di possibili anagrammi e da una parola (entrambi passati come parametri), ritorna un nuovo array contenente tutti gli anagrammi corretti della parola data. Per esempio, partendo da “cartine” e [”carenti”, “incerta”, “espatrio”], il valore ritornato deve essere [”carenti”, “incerta”].
+            let word3 = "cartine";
+            let possibleAnagrams = ["carenti", "incerta", "espatrio"];
+            function checkCorrectAnagrams(word1, anagrams) {
+                let correctAnagrams = [];
+                function cleanWord(word) {
+                    return word
+                        .toLowerCase()
+                        .replace(/[\s.,!?;:]/g, "")
+                        .split("")
+                        .sort()
+                        .join("");
+                }
+                let cleanedWord = cleanWord(word1);
+                anagrams.forEach((word) => {
+                    if (cleanWord(word) === cleanedWord) {
+                        correctAnagrams.push(word);
+                    }
+                });
+                return correctAnagrams;
+            }
+            console.log(checkCorrectAnagrams(word3, possibleAnagrams));
+
+            // ESERCIZIO 4
+            // Partendo da una stringa passata come parametro, ritorna `true` se la stringa è palindroma o `false` se non lo è.
+            let string2 = "I topi non avevano nipoti";
+            function isPalindrome(string) {
+                function cleanString(string) {
+                    return string.toLowerCase().replace(/ /g, "");
+                }
+                let cleanedString = cleanString(string);
+                let reversedString = cleanedString.split("").reverse().join("");
+                return cleanedString === reversedString;
+            }
+            console.log(isPalindrome(string2));
+
+            // ESERCIZIO 5
+            // Partendo da un numero intero (dai parametri) ritorna un numero che contenga le stesse cifre, ma in ordine contrario. Es. 189 ⇒ 981
+            let number5 = 189;
+            function reverseNum(num) {
+                return parseInt(num.toString().split("").reverse().join(""), 10);
+            }
+            console.log(reverseNum(number5)); // Output: 981
+
+            // ESERCIZIO 6
+            /* Scrivi una funzione che accetti un numero positivo X come parametro. La funzione dovrebbe stampare a console una “scala” creata con il carattere “#” e avente X scalini.
+            Es.
+            X = 2
+            '#'
+            '##'
+            X = 3
+            '#'
+            '##'
+            '###'
+            */
+            let number6 = 6;
+            function createStaircase(num) {
+                let step = "";
+                for (let i = 0; i < num; i++) {
+                    step += "#";
+                    console.log(step);
+                }
+            }
+            createStaircase(number6);
+
+            // ESERCIZIO 7
+            // Crea una funzione che, data una stringa come parametro, ritorni la stessa stringa, ma al contrario. Es. “Ciao” ****⇒ “oaiC”
+            function reverseString(num) {
+                return num.toString().split("").reverse().join("");
+            }
+            console.log(reverseString(string1));
+
+            // ESERCIZIO 8
+            /* Crea una funzione che accetti un array e un numero Y come parametro. Dividi l’array in sotto-array aventi lunghezza Y.
+            Es. array: [1, 2, 3, 4], y: 2 ⇒ [[ 1, 2], [3, 4]]
+            array: [1, 2, 3, 4, 5], y: 4 ⇒ [[ 1, 2, 3, 4], [5]]
+            */
+            let number7 = 5;
+            let numbers3 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+            function chunkArray(num, array) {
+                let result = [];
+                for (let i = 0; i < array.length; i += num) {
+                    let chunk = array.slice(i, i + num);
+                    result.push(chunk);
+                }
+                return result;
+            }
+            console.log(chunkArray(number7, numbers3));
+
+            // ESERCIZIO 9
+            /* Scrivi una funzione che accetti un numero positivo X come parametro. La funzione dovrebbe stampare a console una “piramide” create con il carattere “#” e avente X strati.
+            Es.
+            X = 3
+            '#'
+            '###'
+            '#####'
+            */
+            let number8 = 6;
+            function createStaircase2(num) {
+                for (let i = 1; i <= num; i++) {
+                    let step = "";
+                    for (let j = 0; j < 2 * i - 1; j++) {
+                        step += "#";
+                    }
+                    console.log(step);
+                }
+            }
+            createStaircase2(number8);
+
+            // ESERCIZIO 10
+            /* Scrivi una funzione che accetti un intero N e ritorni una matrice a spirale NxN:
+            Es.
+            N = 2
+            [[1, 2],[4, 3]]
+
+            N = 3
+            [[1, 2, 3],[8, 9, 4],[7, 6, 5]]
+
+            N = 4
+            [[1, 2, 3, 4],[12, 13, 14, 5],[11, 16, 15, 6],[10, 9, 8, 7]]
+            */
+        </script>
+    </body>
+</html>

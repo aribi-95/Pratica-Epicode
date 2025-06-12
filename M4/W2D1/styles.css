@@ -1,0 +1,16 @@
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+}
+
+#container img {
+    height: 300px;
+    width: 300px;
+    border-radius: 20px;
+    margin: 15px;
+    object-fit: cover;
+    box-shadow: 5px 5px 5px rgb(187, 189, 190);
+}

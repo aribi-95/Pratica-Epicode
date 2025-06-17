@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Book details</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous" />
+        <script src="details.js" defer></script>
+        <style>
+            #wrapper {
+                margin: 1em 2em;
+            }
+            #infoContainer {
+                font-size: 1.1em;
+            }
+            #infoContainer img {
+                width: 100%;
+            }
+            @media (min-width: 768px) {
+                #infoContainer img {
+                    width: 30%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div id="wrapper">
+            <h1 id="title" class="mb-4"></h1>
+            <div id="infoContainer" class="d-flex flex-column flex-md-row align-items-center gap-3 gap-md-4"></div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    </body>
+</html>

@@ -1,0 +1,74 @@
+* {
+    font-family: "Fraunces", serif;
+    font-optical-sizing: auto;
+    font-weight: 330;
+    font-style: normal;
+    font-variation-settings: "SOFT" 0, "WONK" 0;
+}
+
+nav {
+    font-size: 1.2em;
+}
+
+.nav-item {
+    border-radius: 5px;
+}
+
+.nav-link {
+    padding: 5px 20px !important;
+}
+
+.nav-link.active {
+    border-bottom: 3px solid rgb(178, 178, 178);
+}
+
+.nav-item:hover {
+    background-color: rgb(235, 235, 235);
+}
+
+h1 {
+    color: #535931;
+}
+
+h2 span {
+    font-size: 0.8em !important;
+    font-style: italic;
+    font-weight: 400;
+    color: #535931;
+}
+
+.card {
+    border: none;
+    overflow: visible;
+    transition: scale 0.15s ease-in-out;
+}
+
+.card:hover {
+    scale: 1.04;
+}
+
+.card-body {
+    padding: 0.7rem 1rem 0.2rem 1rem;
+}
+
+.card-img-top {
+    width: 100%;
+    aspect-ratio: 6/7;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 5%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card-body > * {
+    margin: 0;
+}
+
+.card-text:first-of-type {
+    font-style: italic !important;
+    font-size: 0.9em;
+}
+
+.card-text:last-of-type {
+    margin-top: 0.5rem;
+}

@@ -1,0 +1,21 @@
+td img {
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.editBtn {
+    background-color: #ffe0a7;
+}
+
+.deleteBtn {
+    background-color: #bd0f00c9;
+}
+
+#saveBtnForm {
+    font-weight: bold;
+    color: white;
+    background-color: #696f3f;
+}

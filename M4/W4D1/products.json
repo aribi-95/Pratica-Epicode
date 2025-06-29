@@ -1,0 +1,148 @@
+// File creato per comodità/sicurezza per salvare tutti i prodotti che ho inventato
+
+[
+    {
+        "_id": "685ae897968de5001552a3c6",
+        "name": "Sapone al legno di cedro",
+        "description": "Un sapone artigianale che avvolge la pelle con il profumo intenso e rasserenante del legno di cedro. Le sue note legnose, calde e profonde, evocano passeggiate nei boschi e momenti di relax. Formulato per l’uso quotidiano, deterge delicatamente senza seccare, lasciando la pelle morbida e rinvigorita. Ideale per chi cerca un momento di benessere autentico sotto la doccia.",
+        "brand": "Botanika",
+        "imageUrl": "https://images.pexels.com/photos/6187525/pexels-photo-6187525.jpeg",
+        "price": 7.2,
+        "userId": "685ad7b4968de5001552a3c2",
+        "createdAt": "2025-06-24T18:04:07.336Z",
+        "updatedAt": "2025-06-29T16:27:47.638Z",
+        "__v": 0
+    },
+    {
+        "_id": "685aeede968de5001552a3cd",
+        "name": "Sapone floreale alla rosa",
+        "description": "Questo delicato sapone combina le proprietà lenitive della camomilla con il profumo romantico e avvolgente della rosa. Pensato per coccolare anche le pelli più sensibili, deterge con dolcezza senza alterare l’equilibrio cutaneo. La sua fragranza naturale dona una sensazione di freschezza e serenità ad ogni utilizzo. Perfetto per trasformare la routine quotidiana in un rituale di bellezza.",
+        "brand": "Luce Naturale",
+        "imageUrl": "https://images.pexels.com/photos/10853727/pexels-photo-10853727.jpeg",
+        "price": 6.8,
+        "userId": "685ad7b4968de5001552a3c2",
+        "createdAt": "2025-06-24T18:30:54.726Z",
+        "updatedAt": "2025-06-29T16:28:51.144Z",
+        "__v": 0
+    },
+    {
+        "_id": "685af88b968de5001552a3d4",
+        "name": "Scrub al caffè",
+        "description": "Un'esplosione di energia e vitalità per la tua pelle: questo scrub unisce il potere esfoliante del caffè macinato alla nutrizione dell’olio di cocco. Stimola la circolazione, rimuove delicatamente le cellule morte e lascia la pelle liscia e tonica. Ideale da utilizzare sotto la doccia per un effetto \"risveglio\" immediato. Il suo profumo avvolgente di caffè rende il trattamento ancora più piacevole.",
+        "brand": "TerraViva",
+        "imageUrl": "https://apumpkinandaprincess.com/wp-content/uploads/2014/10/Homemade-Coffee-Sugar-Scrub.jpg",
+        "price": 9.5,
+        "userId": "685ad7b4968de5001552a3c2",
+        "createdAt": "2025-06-24T19:12:11.307Z",
+        "updatedAt": "2025-06-29T16:29:02.747Z",
+        "__v": 0
+    },
+    {
+        "_id": "685ed58323dd0200151dc4de",
+        "name": "Olio essenziale di eucalipto",
+        "description": "Distillato da foglie fresche di eucalipto, questo olio essenziale puro al 100% è un concentrato di freschezza naturale. Le sue proprietà balsamiche lo rendono perfetto per alleviare la sensazione di congestione respiratoria e purificare l’ambiente. Ottimo anche per massaggi rivitalizzanti o da aggiungere al diffusore per creare un'atmosfera rigenerante. Un alleato indispensabile per il benessere quotidiano.",
+        "brand": "Aromarìa",
+        "imageUrl": "https://www.essentialoilscompany.com/cdn/shop/articles/eucalyptus_essentail_oil_featured_f00dbabb-46de-4eca-84b7-3e2e9cb20db8.jpg?v=1724204142&width=1000",
+        "price": 12,
+        "userId": "685ad7b4968de5001552a3c2",
+        "createdAt": "2025-06-27T17:31:47.739Z",
+        "updatedAt": "2025-06-29T16:29:20.646Z",
+        "__v": 0
+    },
+    {
+        "_id": "685ed59c23dd0200151dc4df",
+        "name": "Crema mani all’avena",
+        "description": "Formulata con avena colloidale e burro di karité, questa crema mani offre un’idratazione intensa e duratura. Ideale per mani secche o screpolate, si assorbe rapidamente lasciando la pelle liscia e protetta. La sua texture morbida e il profumo delicato regalano un momento di comfort ad ogni applicazione. Un trattamento quotidiano che nutre in profondità senza ungere.",
+        "brand": "Selvìa",
+        "imageUrl": "https://helloglow.co/wp-content/uploads/2022/11/DIY-Oat-Milk-Lotion-6.jpg",
+        "price": 8.9,
+        "userId": "685ad7b4968de5001552a3c2",
+        "createdAt": "2025-06-27T17:32:12.445Z",
+        "updatedAt": "2025-06-29T16:29:32.833Z",
+        "__v": 0
+    },
+    {
+        "_id": "685ed5a323dd0200151dc4e0",
+        "name": "Sapone all’argilla rosa",
+        "description": "Un sapone naturale e raffinato che unisce le proprietà purificanti dell’argilla rosa a una formula delicata per viso e corpo. Ideale per rimuovere tossine e impurità senza irritare la pelle, dona luminosità e freschezza fin dal primo utilizzo. La sua schiuma cremosa e leggera accarezza la pelle lasciandola pulita e setosa. Perfetto per chi cerca un trattamento detox quotidiano.",
+        "brand": "ArgillEssence",
+        "imageUrl": "https://www.brambleberry.com/on/demandware.static/-/Sites-brambleberry-master-catalog/default/dw83aa6b60/projectimages/PS000161-000180/PS000177%20final.jpg",
+        "price": 7.4,
+        "userId": "685ad7b4968de5001552a3c2",
+        "createdAt": "2025-06-27T17:32:19.505Z",
+        "updatedAt": "2025-06-29T16:29:46.342Z",
+        "__v": 0
+    },
+    {
+        "_id": "685ed5aa23dd0200151dc4e1",
+        "name": "Burro cacao alla menta e cioccolato",
+        "description": "Un goloso balsamo labbra che fonde la freschezza della menta piperita con la dolcezza del cioccolato biologico. Nutre e protegge in profondità grazie alla sua formula naturale e delicata. Ogni applicazione regala un’immediata sensazione di sollievo e un leggero profumo irresistibile. Ideale da portare sempre con sé per labbra morbide e irresistibili.",
+        "brand": "Foglia Fredda",
+        "imageUrl": "https://jenniraincloud.com/wp-content/uploads/2014/07/Homemade-Mint-Chocolate-Lip-Balm.jpg",
+        "price": 4.2,
+        "userId": "685ad7b4968de5001552a3c2",
+        "createdAt": "2025-06-27T17:32:26.863Z",
+        "updatedAt": "2025-06-29T16:30:00.580Z",
+        "__v": 0
+    },
+    {
+        "_id": "685ed5b123dd0200151dc4e2",
+        "name": "Candela al sandalo",
+        "description": "Realizzata con cera di soia naturale, questa candela al sandalo sprigiona una fragranza calda, avvolgente e rilassante. Perfetta per creare un’atmosfera intima e serena, è ideale per accompagnare momenti di meditazione, lettura o relax. Il profumo legnoso persiste delicatamente nell’ambiente, donando una sensazione di comfort e benessere. Un tocco elegante per ogni spazio della casa.",
+        "brand": "Lume&Loto",
+        "imageUrl": "https://www.flickeringferncandle.com/cdn/shop/products/sandalwoodcandle7_1024_1200x1200.jpg?v=1678290839",
+        "price": 10.5,
+        "userId": "685ad7b4968de5001552a3c2",
+        "createdAt": "2025-06-27T17:32:33.387Z",
+        "updatedAt": "2025-06-29T16:30:14.459Z",
+        "__v": 0
+    },
+    {
+        "_id": "685ed5b823dd0200151dc4e3",
+        "name": "Maschera viso all’argilla verde",
+        "description": "Una maschera purificante potente ma delicata, perfetta per le pelli grasse e acneiche. L’argilla verde francese assorbe l’eccesso di sebo, libera i pori e riduce le imperfezioni in modo naturale. Dopo l’uso, la pelle appare più fresca, levigata e visibilmente riequilibrata. Un trattamento settimanale indispensabile per mantenere il viso pulito e sano.",
+        "brand": "PuraVita",
+        "imageUrl": "https://images.squarespace-cdn.com/content/v1/5057d4b7e4b093884eea4b8a/1498071490971-K80VLJAMCWSV3PDTJOCT/claymask.jpg?format=1500w",
+        "price": 11.3,
+        "userId": "685ad7b4968de5001552a3c2",
+        "createdAt": "2025-06-27T17:32:40.299Z",
+        "updatedAt": "2025-06-29T16:30:27.098Z",
+        "__v": 0
+    },
+    {
+        "_id": "685ed5bf23dd0200151dc4e4",
+        "name": "Tonico viso ai fiori d’arancio",
+        "description": "Fresco e delicato, questo tonico senza alcol è ideale per tonificare e lenire la pelle ogni giorno. L’acqua di fiori d’arancio unita all’aloe vera dona una sensazione di freschezza immediata, riequilibrando l’epidermide. Perfetto da usare dopo la detersione o come rinfrescante durante la giornata. Dona al viso un aspetto luminoso e una profumazione floreale leggera e piacevole.",
+        "brand": "FloraLuce",
+        "imageUrl": "https://withthegrains.com/wp-content/uploads/2015/06/Homemade-Facial-Toner-by-With-The-Grains-04.jpg",
+        "price": 9,
+        "userId": "685ad7b4968de5001552a3c2",
+        "createdAt": "2025-06-27T17:32:47.373Z",
+        "updatedAt": "2025-06-29T16:30:37.677Z",
+        "__v": 0
+    },
+    {
+        "_id": "685ed5c523dd0200151dc4e5",
+        "name": "Bagnoschiuma miele & mandorla",
+        "description": "Un bagno dolce e avvolgente grazie alla combinazione di miele nutriente e olio di mandorla dolce. La sua formula cremosa deterge delicatamente lasciando la pelle morbida, idratata e profumata. Ideale per chi cerca una coccola quotidiana che trasformi la doccia in un momento di puro piacere. La fragranza calda e confortante rimane a lungo sulla pelle.",
+        "brand": "Wild",
+        "imageUrl": "https://cdn-image.wearewild.com//1714562031-h-abw-scent-indicator-funnel.jpg?q=80&auto=format&w=480",
+        "price": 7.9,
+        "userId": "685ad7b4968de5001552a3c2",
+        "createdAt": "2025-06-27T17:32:53.330Z",
+        "updatedAt": "2025-06-29T16:30:49.775Z",
+        "__v": 0
+    },
+    {
+        "_id": "685ed5cb23dd0200151dc4e6",
+        "name": "Sapone al carbone attivo",
+        "description": "Questo sapone detox sfrutta le proprietà purificanti del carbone attivo e l’effetto antisettico del tea tree oil. Aiuta a rimuovere le impurità, ridurre l’eccesso di sebo e contrastare le imperfezioni cutanee. Perfetto per chi ha la pelle mista o problematica, dona una pulizia profonda senza seccare. Lascia la pelle fresca, levigata e pronta a respirare.",
+        "brand": "Black Leaf",
+        "imageUrl": "https://2.bp.blogspot.com/-JdEBFVzOifI/VzMLvh2gJ6I/AAAAAAABFKA/85RpEvJLeIMcTo75DfGpiStOf6kIdXZ0ACLcB/s400/P3288884.JPG",
+        "price": 8.6,
+        "userId": "685ad7b4968de5001552a3c2",
+        "createdAt": "2025-06-27T17:32:59.399Z",
+        "updatedAt": "2025-06-29T16:31:39.887Z",
+        "__v": 0
+    }
+]

@@ -1,0 +1,60 @@
+nav {
+    background-color: #ecf6f9;
+}
+
+nav > .container-fluid > a {
+    color: #055160;
+}
+
+.navLogo {
+    height: 35px;
+}
+
+.myAlert {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.myAlert > * {
+    color: #0d4a4a;
+    text-align: center;
+}
+
+.alertLogo {
+    width: 80%;
+}
+
+@media (min-width: 600px) {
+    .alertLogo {
+        width: 60%;
+    }
+}
+
+@media (min-width: 992px) {
+    .alertLogo {
+        width: 45%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .alertLogo {
+        width: 30%;
+    }
+}
+
+.card img {
+    aspect-ratio: 2 / 3;
+    object-fit: cover;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #055160;
+    color: #ecf6f9;
+    padding: 0.7rem 0;
+    text-align: center;
+    z-index: 1000;
+}

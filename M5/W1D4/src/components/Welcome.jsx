@@ -1,5 +1,5 @@
 import { Container, Alert } from "react-bootstrap";
-import logo2 from "./assets/epibooks-logo.png";
+import logo2 from "../assets/epibooks-logo.png";
 
 function Welcome() {
     return (

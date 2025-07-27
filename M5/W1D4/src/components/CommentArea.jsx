@@ -1,19 +1,26 @@
-import { useState, useEffect } from "react";
-import Modal from "react-bootstrap/Modal";
+import { useState, useEffect, useContext } from "react";
 import CommentList from "./CommentList";
 import AddComment from "./AddComment";
 
-const authorizationToken = "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODVhZDdiNDk2OGRlNTAwMTU1MmEzYzIiLCJpYXQiOjE3NTI5OTYxNTAsImV4cCI6MTc1NDIwNTc1MH0.j4Gl4k5xN72X27nBV7dsgp5Sji3PuceAEMjHVg0QVQ0";
+import { ThemeContext } from "../context/ThemeContext";
 
-function CommentArea({ bookId, bookTitle, show, onHide }) {
+const authorizationToken =
+    "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODVhZDdiNDk2OGRlNTAwMTU1MmEzYzIiLCJpYXQiOjE3NTI5OTYxNTAsImV4cCI6MTc1NDIwNTc1MH0.j4Gl4k5xN72X27nBV7dsgp5Sji3PuceAEMjHVg0QVQ0";
+
+function CommentArea({ bookId, bookTitle }) {
     const [comments, setComments] = useState([]);
+    const { theme } = useContext(ThemeContext);
+    const titleTheme = theme === "dark" ? "text-light" : "text-dark";
 
     useEffect(() => {
         if (!bookId) return;
 
-        fetch(`https://striveschool-api.herokuapp.com/api/books/${bookId}/comments`, {
-            headers: { Authorization: authorizationToken },
-        })
+        fetch(
+            `https://striveschool-api.herokuapp.com/api/books/${bookId}/comments`,
+            {
+                headers: { Authorization: authorizationToken },
+            }
+        )
             .then((res) => res.json())
             .then((data) => setComments(data))
             .catch((err) => console.error(err));
@@ -57,7 +64,11 @@ function CommentArea({ bookId, bookTitle, show, onHide }) {
                 return res.json();
             })
             .then((updatedComment) => {
-                setComments((prev) => prev.map((comment) => (comment._id === id ? updatedComment : comment)));
+                setComments((prev) =>
+                    prev.map((comment) =>
+                        comment._id === id ? updatedComment : comment
+                    )
+                );
             })
             .catch((err) => console.error(err));
     };
@@ -79,24 +90,31 @@ function CommentArea({ bookId, bookTitle, show, onHide }) {
     };
 
     return (
-        <Modal show={show} onHide={onHide} size="lg" aria-labelledby="contained-modal-title-vcenter" centered>
-            <Modal.Header closeButton>
-                <Modal.Title id="contained-modal-title-vcenter">
-                    <i>{bookTitle}</i>
-                </Modal.Title>
-            </Modal.Header>
-            <Modal.Body className="p-0">
-                <div className="p-3">
-                    <h4>Recensioni degli utenti</h4>
-                    <CommentList reviews={comments} onUpdateComment={updateComment} onDeleteComment={deleteComment} />
-                </div>
-                <hr className="m-0" />
-                <div className="p-3">
-                    <h4 className="mb-4">Inserisci la tua recensione!</h4>
-                    <AddComment bookId={bookId} onAddComment={addComment} />
-                </div>
-            </Modal.Body>
-        </Modal>
+        <>
+            <h3 className={`text-center ${titleTheme}`}>
+                <i>{bookTitle}</i>
+            </h3>
+
+            <hr className={"border-2 border-secondary"} />
+
+            <div className="p-3">
+                <CommentList
+                    reviews={comments}
+                    onUpdateComment={updateComment}
+                    onDeleteComment={deleteComment}
+                />
+            </div>
+
+            <hr className={"mt-0 border-2 border-secondary"} />
+
+            <div className="p-3">
+                <h4 className={`mb-4 text-center ${titleTheme}`}>
+                    Inserisci la tua recensione!
+                </h4>
+
+                <AddComment bookId={bookId} onAddComment={addComment} />
+            </div>
+        </>
     );
 }
 

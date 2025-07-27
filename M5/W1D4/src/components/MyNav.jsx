@@ -27,11 +27,11 @@ function MyNav({ searchTerm, setSearchTerm }) {
                         <Nav.Link href="#">About</Nav.Link>
                         <Nav.Link href="#">Browse</Nav.Link>
                     </Nav>
-                    <Form className="d-flex">
+                    <Form className="d-flex " data-bs-theme={theme}>
                         <Form.Control
                             type="search"
                             placeholder="Cerca un titolo..."
-                            className="me-2 w-100"
+                            className="me-2 my-3 my-lg-0 w-100"
                             value={searchTerm}
                             onChange={(e) => setSearchTerm(e.target.value)}
                         />

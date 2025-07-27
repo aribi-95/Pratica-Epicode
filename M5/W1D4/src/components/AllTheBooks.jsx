@@ -1,5 +1,6 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
 import { Container, Row, Col, Form } from "react-bootstrap";
+import { ThemeContext } from "../context/ThemeContext";
 import SingleBook from "./SingleBook";
 
 import fantasy from "../assets/books/fantasy.json";
@@ -8,7 +9,9 @@ import romance from "../assets/books/romance.json";
 import scifi from "../assets/books/scifi.json";
 import history from "../assets/books/history.json";
 
-function AllTheBooks({ searchTerm }) {
+function AllTheBooks({ searchTerm, selected, setSelected, setSelectedTitle }) {
+    const { theme } = useContext(ThemeContext);
+
     const [selectedGenre, setSelectedGenre] = useState("Fantasy");
 
     const booksByGenre = {
@@ -29,8 +32,12 @@ function AllTheBooks({ searchTerm }) {
         <Container>
             <Form.Select
                 value={selectedGenre}
-                onChange={(e) => setSelectedGenre(e.target.value)}
+                onChange={(e) => {
+                    setSelectedGenre(e.target.value);
+                    setSelected("");
+                }}
                 className="my-3"
+                data-bs-theme={theme}
             >
                 <option value="Fantasy">Fantasy</option>
                 <option value="Horror">Horror</option>
@@ -49,7 +56,12 @@ function AllTheBooks({ searchTerm }) {
                         lg={3}
                         className="mb-4"
                     >
-                        <SingleBook book={book} />
+                        <SingleBook
+                            book={book}
+                            selected={selected}
+                            setSelected={setSelected}
+                            setSelectedTitle={setSelectedTitle}
+                        />
                     </Col>
                 ))}
             </Row>
